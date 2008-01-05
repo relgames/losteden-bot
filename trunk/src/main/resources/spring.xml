@@ -4,4 +4,19 @@
 <beans default-autowire="byName" default-init-method="initialize" default-destroy-method="dispose"
        default-lazy-init="false">
 
+    <bean id="logic" singleton="true" class="com.losteden.bot.GameLogic">
+        <property name="botState" ref="botState"/>
+        <property name="gameState" ref="gameState"/>
+        <property name="controllQueue" ref="controllQueue"/>
+    </bean>
+
+    <bean id="botState" singleton="true" class="com.losteden.bot.BotStateImpl">
+    </bean>
+
+    <bean id="gameState" singleton="true" class="com.losteden.bot.GameStateImpl">
+    </bean>
+
+    <bean id="controllQueue" singleton="true" class="com.losteden.bot.ControllQueueImpl">
+    </bean>
+
 </beans>
