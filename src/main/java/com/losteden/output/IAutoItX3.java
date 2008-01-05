@@ -321,10 +321,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type String
      */
     public String controlGetFocus(String strTitle, String strText) {
-        String result_of_ControlGetFocus = Dispatch.call(this, "ControlGetFocus", strTitle, strText).toString();
-
-
-        return result_of_ControlGetFocus;
+        return Dispatch.call(this, "ControlGetFocus", strTitle, strText).toString();
     }
 
     /**
@@ -468,10 +465,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int controlMove(String strTitle, String strText, String strControl, int nX, int nY, int nWidth, int nHeight) {
-        int result_of_ControlMove = Dispatch.call(this, "ControlMove", strTitle, strText, strControl, new Variant(nX), new Variant(nY), new Variant(nWidth), new Variant(nHeight)).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_ControlMove;
+        return Dispatch.call(this, "ControlMove", strTitle, strText, strControl, new Variant(nX), new Variant(nY), new Variant(nWidth), new Variant(nHeight)).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -498,10 +492,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int controlSend(String strTitle, String strText, String strControl, String strSendText, int nMode) {
-        int result_of_ControlSend = Dispatch.call(this, "ControlSend", strTitle, strText, strControl, strSendText, new Variant(nMode)).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_ControlSend;
+        return Dispatch.call(this, "ControlSend", strTitle, strText, strControl, strSendText, new Variant(nMode)).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -605,10 +596,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int iniDelete(String strFilename, String strSection, String strKey) {
-        int result_of_IniDelete = Dispatch.call(this, "IniDelete", strFilename, strSection, strKey).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_IniDelete;
+        return Dispatch.call(this, "IniDelete", strFilename, strSection, strKey).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -712,10 +700,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int mouseClick(String strButton, int nX, int nY, int nClicks, int nSpeed) {
-        int result_of_MouseClick = Dispatch.call(this, "MouseClick", strButton, new Variant(nX), new Variant(nY), new Variant(nClicks), new Variant(nSpeed)).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_MouseClick;
+        return Dispatch.call(this, "MouseClick", strButton, new Variant(nX), new Variant(nY), new Variant(nClicks), new Variant(nSpeed)).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -744,10 +729,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int mouseClickDrag(String strButton, int nX1, int nY1, int nX2, int nY2, int nSpeed) {
-        int result_of_MouseClickDrag = Dispatch.call(this, "MouseClickDrag", strButton, new Variant(nX1), new Variant(nY1), new Variant(nX2), new Variant(nY2), new Variant(nSpeed)).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_MouseClickDrag;
+        return Dispatch.call(this, "MouseClickDrag", strButton, new Variant(nX1), new Variant(nY1), new Variant(nX2), new Variant(nY2), new Variant(nSpeed)).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -877,10 +859,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int pixelChecksum(int nLeft, int nTop, int nRight, int nBottom, int nStep) {
-        int result_of_PixelChecksum = Dispatch.call(this, "PixelChecksum", new Variant(nLeft), new Variant(nTop), new Variant(nRight), new Variant(nBottom), new Variant(nStep)).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_PixelChecksum;
+        return Dispatch.call(this, "PixelChecksum", new Variant(nLeft), new Variant(nTop), new Variant(nRight), new Variant(nBottom), new Variant(nStep)).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -936,10 +915,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type Variant
      */
     public Variant pixelSearch(int nLeft, int nTop, int nRight, int nBottom, int nCol, int nVar, int nStep) {
-        Variant result_of_PixelSearch = Dispatch.call(this, "PixelSearch", new Variant(nLeft), new Variant(nTop), new Variant(nRight), new Variant(nBottom), new Variant(nCol), new Variant(nVar), new Variant(nStep));
-
-
-        return result_of_PixelSearch;
+        return Dispatch.call(this, "PixelSearch", new Variant(nLeft), new Variant(nTop), new Variant(nRight), new Variant(nBottom), new Variant(nCol), new Variant(nVar), new Variant(nStep));
     }
 
     /**
@@ -991,10 +967,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int processWait(String strProcess, int nTimeout) {
-        int result_of_ProcessWait = Dispatch.call(this, "ProcessWait", strProcess, new Variant(nTimeout)).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_ProcessWait;
+        return Dispatch.call(this, "ProcessWait", strProcess, new Variant(nTimeout)).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -1015,10 +988,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int processWaitClose(String strProcess, int nTimeout) {
-        int result_of_ProcessWaitClose = Dispatch.call(this, "ProcessWaitClose", strProcess, new Variant(nTimeout)).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_ProcessWaitClose;
+        return Dispatch.call(this, "ProcessWaitClose", strProcess, new Variant(nTimeout)).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -1118,10 +1088,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int run(String strRun, String strDir, int nShowFlags) {
-        int result_of_Run = Dispatch.call(this, "Run", strRun, strDir, new Variant(nShowFlags)).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_Run;
+        return Dispatch.call(this, "Run", strRun, strDir, new Variant(nShowFlags)).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -1167,10 +1134,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int runWait(String strRun, String strDir, int nShowFlags) {
-        int result_of_RunWait = Dispatch.call(this, "RunWait", strRun, strDir, new Variant(nShowFlags)).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_RunWait;
+        return Dispatch.call(this, "RunWait", strRun, strDir, new Variant(nShowFlags)).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -1242,10 +1206,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type String
      */
     public String statusbarGetText(String strTitle, String strText, int nPart) {
-        String result_of_StatusbarGetText = Dispatch.call(this, "StatusbarGetText", strTitle, strText, new Variant(nPart)).toString();
-
-
-        return result_of_StatusbarGetText;
+        return Dispatch.call(this, "StatusbarGetText", strTitle, strText, new Variant(nPart)).toString();
     }
 
     /**
@@ -1317,10 +1278,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int winActive(String strTitle, String strText) {
-        int result_of_WinActive = Dispatch.call(this, "WinActive", strTitle, strText).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_WinActive;
+        return Dispatch.call(this, "WinActive", strTitle, strText).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -1341,10 +1299,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int winClose(String strTitle, String strText) {
-        int result_of_WinClose = Dispatch.call(this, "WinClose", strTitle, strText).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_WinClose;
+        return Dispatch.call(this, "WinClose", strTitle, strText).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -1365,10 +1320,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int winExists(String strTitle, String strText) {
-        int result_of_WinExists = Dispatch.call(this, "WinExists", strTitle, strText).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_WinExists;
+        return Dispatch.call(this, "WinExists", strTitle, strText).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -1407,10 +1359,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type String
      */
     public String winGetClassList(String strTitle, String strText) {
-        String result_of_WinGetClassList = Dispatch.call(this, "WinGetClassList", strTitle, strText).toString();
-
-
-        return result_of_WinGetClassList;
+        return Dispatch.call(this, "WinGetClassList", strTitle, strText).toString();
     }
 
     /**
@@ -1431,10 +1380,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int winGetClientSizeHeight(String strTitle, String strText) {
-        int result_of_WinGetClientSizeHeight = Dispatch.call(this, "WinGetClientSizeHeight", strTitle, strText).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_WinGetClientSizeHeight;
+        return Dispatch.call(this, "WinGetClientSizeHeight", strTitle, strText).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -1455,10 +1401,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int winGetClientSizeWidth(String strTitle, String strText) {
-        int result_of_WinGetClientSizeWidth = Dispatch.call(this, "WinGetClientSizeWidth", strTitle, strText).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_WinGetClientSizeWidth;
+        return Dispatch.call(this, "WinGetClientSizeWidth", strTitle, strText).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -1479,10 +1422,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type String
      */
     public String winGetHandle(String strTitle, String strText) {
-        String result_of_WinGetHandle = Dispatch.call(this, "WinGetHandle", strTitle, strText).toString();
-
-
-        return result_of_WinGetHandle;
+        return Dispatch.call(this, "WinGetHandle", strTitle, strText).toString();
     }
 
     /**
@@ -1503,10 +1443,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int winGetPosX(String strTitle, String strText) {
-        int result_of_WinGetPosX = Dispatch.call(this, "WinGetPosX", strTitle, strText).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_WinGetPosX;
+        return Dispatch.call(this, "WinGetPosX", strTitle, strText).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -1527,10 +1464,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int winGetPosY(String strTitle, String strText) {
-        int result_of_WinGetPosY = Dispatch.call(this, "WinGetPosY", strTitle, strText).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_WinGetPosY;
+        return Dispatch.call(this, "WinGetPosY", strTitle, strText).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -1551,10 +1485,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int winGetPosHeight(String strTitle, String strText) {
-        int result_of_WinGetPosHeight = Dispatch.call(this, "WinGetPosHeight", strTitle, strText).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_WinGetPosHeight;
+        return Dispatch.call(this, "WinGetPosHeight", strTitle, strText).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -1575,10 +1506,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int winGetPosWidth(String strTitle, String strText) {
-        int result_of_WinGetPosWidth = Dispatch.call(this, "WinGetPosWidth", strTitle, strText).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_WinGetPosWidth;
+        return Dispatch.call(this, "WinGetPosWidth", strTitle, strText).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -1599,10 +1527,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type String
      */
     public String winGetProcess(String strTitle, String strText) {
-        String result_of_WinGetProcess = Dispatch.call(this, "WinGetProcess", strTitle, strText).toString();
-
-
-        return result_of_WinGetProcess;
+        return Dispatch.call(this, "WinGetProcess", strTitle, strText).toString();
     }
 
     /**
@@ -1623,10 +1548,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int winGetState(String strTitle, String strText) {
-        int result_of_WinGetState = Dispatch.call(this, "WinGetState", strTitle, strText).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_WinGetState;
+        return Dispatch.call(this, "WinGetState", strTitle, strText).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -1647,10 +1569,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type String
      */
     public String winGetText(String strTitle, String strText) {
-        String result_of_WinGetText = Dispatch.call(this, "WinGetText", strTitle, strText).toString();
-
-
-        return result_of_WinGetText;
+        return Dispatch.call(this, "WinGetText", strTitle, strText).toString();
     }
 
     /**
@@ -1671,10 +1590,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type String
      */
     public String winGetTitle(String strTitle, String strText) {
-        String result_of_WinGetTitle = Dispatch.call(this, "WinGetTitle", strTitle, strText).toString();
-
-
-        return result_of_WinGetTitle;
+        return Dispatch.call(this, "WinGetTitle", strTitle, strText).toString();
     }
 
     /**
@@ -1695,10 +1611,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int winKill(String strTitle, String strText) {
-        int result_of_WinKill = Dispatch.call(this, "WinKill", strTitle, strText).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_WinKill;
+        return Dispatch.call(this, "WinKill", strTitle, strText).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -1822,10 +1735,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int winMenuSelectItem(String strTitle, String strText, String strItem1, String strItem2, String strItem3, String strItem4, String strItem5, String strItem6, String strItem7, String strItem8) {
-        int result_of_WinMenuSelectItem = Dispatch.callN(this, "WinMenuSelectItem", new Object[]{strTitle, strText, strItem1, strItem2, strItem3, strItem4, strItem5, strItem6, strItem7, strItem8}).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_WinMenuSelectItem;
+        return Dispatch.callN(this, "WinMenuSelectItem", new Object[]{strTitle, strText, strItem1, strItem2, strItem3, strItem4, strItem5, strItem6, strItem7, strItem8}).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -1881,10 +1791,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int winMove(String strTitle, String strText, int nX, int nY, int nWidth, int nHeight) {
-        int result_of_WinMove = Dispatch.call(this, "WinMove", strTitle, strText, new Variant(nX), new Variant(nY), new Variant(nWidth), new Variant(nHeight)).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_WinMove;
+        return Dispatch.call(this, "WinMove", strTitle, strText, new Variant(nX), new Variant(nY), new Variant(nWidth), new Variant(nHeight)).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -1965,10 +1872,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
     public int winWait(String strTitle, String strText, int nTimeout) {
-        int result_of_WinWait = Dispatch.call(this, "WinWait", strTitle, strText, new Variant(nTimeout)).changeType(Variant.VariantInt).getInt();
-
-
-        return result_of_WinWait;
+        return Dispatch.call(this, "WinWait", strTitle, strText, new Variant(nTimeout)).changeType(Variant.VariantInt).getInt();
     }
 
     /**
@@ -2034,10 +1938,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
 	public int winWaitClose(String strTitle, String strText, int nTimeout) {
-		int result_of_WinWaitClose = Dispatch.call(this, "WinWaitClose", strTitle, strText, new Variant(nTimeout)).changeType(Variant.VariantInt).getInt();
-
-
-		return result_of_WinWaitClose;
+		return Dispatch.call(this, "WinWaitClose", strTitle, strText, new Variant(nTimeout)).changeType(Variant.VariantInt).getInt();
 	}
 
 	/**
@@ -2070,10 +1971,7 @@ public class IAutoItX3 extends Dispatch {
      * @return the result is of type int
      */
 	public int winWaitNotActive(String strTitle, String strText, int nTimeout) {
-		int result_of_WinWaitNotActive = Dispatch.call(this, "WinWaitNotActive", strTitle, strText, new Variant(nTimeout)).changeType(Variant.VariantInt).getInt();
-
-
-		return result_of_WinWaitNotActive;
+		return Dispatch.call(this, "WinWaitNotActive", strTitle, strText, new Variant(nTimeout)).changeType(Variant.VariantInt).getInt();
 	}
 
 }

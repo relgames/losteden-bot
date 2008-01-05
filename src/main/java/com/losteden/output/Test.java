@@ -6,6 +6,7 @@ public class Test {
 
         wrapper.sleep(1000 * 10);
         wrapper.mouseMove(100, 100);
+        wrapper.send("Pashel na huy");
         System.exit(1);
     }
 }
