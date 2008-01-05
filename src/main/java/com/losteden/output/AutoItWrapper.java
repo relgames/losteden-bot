@@ -1,7 +1,5 @@
 package com.losteden.output;
 
-import java.awt.peer.RobotPeer;
-import java.awt.*;
 import java.awt.event.InputEvent;
 
 public class AutoItWrapper implements Robot {
